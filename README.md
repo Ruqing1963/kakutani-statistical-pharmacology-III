@@ -2,7 +2,9 @@
 
 **Spectral Kakutani–Feldman–Hájek Criticality of Correlated Conformational Modes: Mode Amplitude Perturbation, Iso-Spectral Givens Rotation, and Tail-Increment Finite-Size Elimination**
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23015709.svg)](https://doi.org/10.5281/zenodo.23015709)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23019056.svg)](https://doi.org/10.5281/zenodo.23019056)
+
+Version 1.1 DOI: 10.5281/zenodo.23019056 (version 1.0: 10.5281/zenodo.23015709).
 
 Zhengyi Chen<sup>1</sup>, Ruqing Chen<sup>2</sup>
 
@@ -12,6 +14,8 @@ Zhengyi Chen<sup>1</sup>, Ruqing Chen<sup>2</sup>
 Paper III of the series *Statistical Pharmacology via Kakutani Dichotomy*. Paper I (DOI 10.5281/zenodo.23005921) treated product ensembles; Paper II (DOI 10.5281/zenodo.23012217) proved the commuting–rotation decomposition `D_cov = D_cov^comm + D_cov^rot` of the correlated Kakutani index. This paper asks when each part diverges if a ligand's effect on the collective modes decays along the mode index, and introduces the doubling tail-increment estimator that removes the finite-size bias of the scaling exponent near the critical point.
 
 ## Status
+
+Version 1.1 (2026-09-28): equation (3.1) now carries the correct negative sign of the `N^{-s-1}` Euler–Maclaurin term, `H_N(s) = N^{1-s}/(1-s) + zeta(s) + N^{-s}/2 - s N^{-s-1}/12 + O(N^{-s-3})`; version 1.0 printed it with a plus sign and `paper03_compute_tables.py` evaluated the Euler–Maclaurin prediction columns of Tables 1–2 with that sign. Only the `N = 10` and `N = 100` rows of those columns changed (deviations now at most `8e-9`); Table 4 and every theorem, constant and exponent are unchanged.
 
 Experiment 03 and the paper (`paper/paper03_spectral_kakutani_criticality.pdf`) are complete. Main results: unified three-regime Euler–Maclaurin asymptotics and the spectral Feldman–Hájek dichotomy at `alpha_c = 1/2` for mode amplitudes and for mode orientations separately (Theorem 3.1); constant-term annihilation by the doubling tail increment (Theorem 4.1); the refined naive-slope bias formula, exact to four decimals (Theorem 4.2); the geodesic parity theorem explaining the residual `+0.0028` shift of the Euclidean mechanism through the curvature of the coordinate `delta = e^eta - 1` on the SPD cone (Theorem 4.3); the joint `(alpha_lam, alpha_theta)` phase diagram (Theorem 5.1) with the finite-N two-power-law cross-over formula that reproduces all 361 measured grid exponents to 4e-4 (Corollary 5.3). The analytic companion `code/paper03_compute_tables.py` writes `results/paper03_tables_summary.txt`.
 
@@ -81,8 +85,9 @@ Runs in about a minute (the phase diagram evaluates 361 exact block profiles of 
   title   = {Spectral Kakutani--Feldman--H{\'a}jek Criticality of Correlated Conformational Modes:
              Mode Amplitude Perturbation, Iso-Spectral Givens Rotation, and Tail-Increment Finite-Size Elimination},
   year    = {2026},
-  doi     = {10.5281/zenodo.23015709},
-  url     = {https://doi.org/10.5281/zenodo.23015709}
+  doi     = {10.5281/zenodo.23019056},
+  url     = {https://doi.org/10.5281/zenodo.23019056},
+  note    = {Version 1.1; version 1.0: 10.5281/zenodo.23015709}
 }
 ```
 

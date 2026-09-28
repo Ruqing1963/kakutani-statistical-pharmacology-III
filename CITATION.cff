@@ -11,9 +11,9 @@ authors:
     given-names: Ruqing
     affiliation: "GUT Geoservice Inc., Montreal, Québec, Canada"
     email: ruqing@hotmail.com
-doi: 10.5281/zenodo.23015709
+doi: 10.5281/zenodo.23019056
 date-released: 2026-09-28
-version: 1.0.0
+version: 1.1.0
 repository-code: "https://github.com/Ruqing1963/kakutani-statistical-pharmacology-III"
 license: MIT
 keywords:
@@ -37,4 +37,4 @@ preferred-citation:
     - family-names: Chen
       given-names: Ruqing
   year: 2026
-  doi: 10.5281/zenodo.23015709
+  doi: 10.5281/zenodo.23019056
